@@ -11,24 +11,24 @@ This event system allows for many Minecraft plugin types (not just Bukkit) as we
 ```XML
 <repositories>
   <repository>
-    <id>egg82-repo-releases</id>
-    <url>https://repo.egg82.me/releases/</url>
+    <id>mizule-repo-releases</id>
+    <url>https://repo.mizule.dev/releases/</url>
   </repository>
   <repository>
-    <id>egg82-repo-snapshots</id>
-    <url>https://repo.egg82.me/snapshots/</url>
+    <id>mizule-repo-snapshots</id>
+    <url>https://repo.mizule.dev/snapshots/</url>
   </repository>
 </repositories>
 
 <dependencies>
   <dependency>
-    <groupId>ninja.egg82</groupId>
+    <groupId>dev.mizule.eventchain</groupId>
     <artifactId>event-chain-api</artifactId>
     <version>LATEST-VERSION</version>
     <scope>provided</scope>
   </dependency>
   <dependency>
-    <groupId>ninja.egg82</groupId>
+    <groupId>dev.mizule.eventchain</groupId>
     <artifactId>event-chain-TYPE</artifactId>
     <version>LATEST-VERSION</version>
   </dependency>
@@ -44,13 +44,13 @@ Javadocs are available from the same repository, so IDEs should be able to pick 
 ```Gradle
 repositories {
     maven {
-        url 'https://repo.egg82.me/releases/'
+        url 'https://repo.mizule.dev/releases/'
     }
 }
 
 dependencies {
-    compileOnly 'ninja.egg82:event-chain-api:LATEST-VERSION'
-    compileOnly 'ninja.egg82:event-chain-TYPE:LATEST-VERSION'
+    compileOnly 'dev.mizule.eventchain:event-chain-api:LATEST-VERSION'
+    compileOnly 'dev.mizule.eventchain:event-chain-TYPE:LATEST-VERSION'
 }
 ```
 
